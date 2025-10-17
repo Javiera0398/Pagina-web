@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva - Salón Belleza Estilo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            max-width: 150px;
+        }
+        .header h1 {
+            color: #c71585;
+            font-size: 2em;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #c71585;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #a0136f;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo_estilo.png" alt="Logo del salón">
+        <h1>Esencía & Belleza</h1>
+    </div>
+    <form>
+        <label for="servicio">Servicio:</label>
+        <select id="servicio" name="servicio">
+            <option value="corte">Corte de pelo</option>
+            <option value="manicure">Manicure</option>
+            <option value="color">Coloración</option>
+            <option value="peinado">Peinado</option>
+        </select>
+
+        <label for="profesional">Profesional:</label>
+        <select id="profesional" name="profesional">
+            <option value="ana">Ana</option>
+            <option value="luis">Luis</option>
+            <option value="carla">Carla</option>
+        </select>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora">
+
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="contacto">Teléfono o correo:</label>
+        <input type="text" id="contacto" name="contacto">
+
+        <button type="submit">Reservar</button>
+    </form>
+</body>
+</html>
